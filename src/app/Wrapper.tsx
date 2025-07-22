@@ -32,7 +32,7 @@ const Wrapper = ({ children }: WrapperTypes) => {
     <>
       <Provider store={store}>
         <SnackbarProvider>
-          <div className="flex flex-col">{children}</div>
+          <div className="flex flex-col p-4">{children}</div>
         </SnackbarProvider>
       </Provider>
     </>

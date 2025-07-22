@@ -1,5 +1,5 @@
 //apis
 import { authApi } from "./api/auth";
-import { incomeApi } from "./api/income";
+import { taskApiSlices } from "./api/task";
 
-export const apiSlices = [authApi, incomeApi];
+export const apiSlices = [authApi, taskApiSlices];
