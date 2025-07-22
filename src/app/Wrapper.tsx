@@ -1,6 +1,5 @@
 "use client";
 
-import AppHeader from "@/components/AppHeader";
 import { SnackbarProvider } from "@/contexts/SnackbarContext";
 import { store } from "@/lib/store";
 import React, { useEffect } from "react";
@@ -33,10 +32,7 @@ const Wrapper = ({ children }: WrapperTypes) => {
     <>
       <Provider store={store}>
         <SnackbarProvider>
-          <div className="flex flex-col">
-            <AppHeader />
-            {children}
-          </div>
+          <div className="flex flex-col">{children}</div>
         </SnackbarProvider>
       </Provider>
     </>
